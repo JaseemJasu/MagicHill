@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                console.log("this is clicked");
+                var bla = $('#txt_name1').val();
+                var blu = $('#txt_name2').val();
+                console.log(bla);
+                console.log(blu);
+                var result = parseInt(bla)+parseInt(blu);
+                console.log(result);
+                $("p").html("Result is "+result);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="txt_name1" />
+    <input type="text" id="txt_name2" />
+    <p>Result</p>
+    <button>Add</button>
+    
+
+
+</body>
+
+</html>
